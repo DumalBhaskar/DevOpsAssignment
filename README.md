@@ -1,6 +1,6 @@
 # DevOpsAssignment
 
-#3 Building and Pushing a Docker Image to a Container Registry
+## Building and Pushing a Docker Image to a Container Registry
 
 This guide will walk you through the process of building a Docker image for your Flask application and pushing it to a container registry.
 
