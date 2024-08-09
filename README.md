@@ -32,8 +32,14 @@ This guide will walk you through deploying a Flask application and MongoDB on a 
 Start Minikube with sufficient resources:
 
 ```bash
-minikube start --cpus=4 --memory=4096mb
+minikube start
 kubectl apply -f mongodb-statefulset.yaml
 kubectl apply -f flask-deployment.yaml
 kubectl apply -f flask-hpa.yaml
 ```
+## Include an explanation of how DNS resolution works within the Kubernetes cluster for inter-pod communication.
+
+When a pod within the cluster tries to connect to another service using its service name, it sends a DNS query to CoreDNS.
+CoreDNS resolves this query to the cluster IP of the service, which is a stable IP address used to route traffic to one of the service's endpoints (pods).
+
+
