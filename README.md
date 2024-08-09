@@ -46,3 +46,6 @@ CoreDNS resolves this query to the cluster IP of the service, which is a stable 
 Resource requests and limits help manage resource allocation and ensure stability:
 Requests are the minimum resources guaranteed for a pod.
 Limits are the maximum resources a pod can use.
+
+## Design Choices and Configurations
+In the design and deployment of the Python Flask application with MongoDB on Kubernetes, several specific configurations and setups were chosen to meet the requirements efficiently. 
